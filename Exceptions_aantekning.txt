@@ -1,0 +1,21 @@
+import java.io.FileNotFoundException;
+
+class Demo {
+    public static void main(String... args) {
+        try {
+            throw new NiemandThuisException();
+            
+        }catch(Throwable e) {
+            System.out.println("a");
+        }finally {
+            System.out.println("c");
+        }
+        System.out.println("b");
+    }
+}
+
+
+class NiemandThuisException extends OutOfMemoryError{}
+
+// it will not compile
+// it will throw an exception at runtime

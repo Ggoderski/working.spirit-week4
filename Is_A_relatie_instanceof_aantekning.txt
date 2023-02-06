@@ -1,0 +1,37 @@
+class Demo {
+    public static void main(String... args) {
+        SprookjesFiguur sf = new Elf();
+        Object o = new Elf();
+        
+        DisneyBoek d = new DisneyBoek();
+        OlieTanker t = new OlieTanker();
+//        OlieTanker temp = (OlieTanker)sf;// kan niet onmogelijk
+        TotaalIetsAnders r = (TotaalIetsAnders)sf;
+        if(o instanceof Elf) {
+            Elf e = (Elf)o;
+            System.out.println(e.toverpunten);
+        }else {
+            System.out.println("Dit is geen Elfje");
+        }
+    }
+}
+interface TotaalIetsAnders{}
+class OlieTanker{}
+
+class DisneyBoek{
+    
+    SprookjesFiguur totHeldBenoemen(){
+        return new Elf();
+    }
+    
+}
+
+
+
+class SprookjesFiguur{
+    
+}
+
+class Elf extends SprookjesFiguur{
+    int toverpunten = 6;
+}

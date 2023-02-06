@@ -1,0 +1,21 @@
+class Demo {
+    public static void main(String... args) {
+        int a = 15;
+        try {
+            int b = 15;
+            a = 16;
+            throw new Exception();
+        }catch(Exception e) {
+            a = 17;
+            // b = 16;  //kijk uit hiervoor
+            throw new Error();
+        }finally {
+            a = 18;
+            throw new RuntimeException();
+        }
+//        System.out.println(a);
+    }
+}
+
+
+Exceptions zijn normale klasses, dus kunnen ook eigen varianten worden gemaakt met behulp van extends.

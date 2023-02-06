@@ -1,0 +1,13 @@
+class Demo {
+    public static void main(String... args) {
+        ProcesBewerking pb = (String v)  -> { System.out.println("dit is in de lambda");  return v.length();};
+        System.out.println(pb.verwerkproces("s ochtends wat langer"));
+        int uitkomst = pb.verwerkproces("s middags");
+        System.out.println(uitkomst);
+    }
+}
+
+
+interface ProcesBewerking{
+    int verwerkproces(String dezin);
+}

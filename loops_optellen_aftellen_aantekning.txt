@@ -1,0 +1,87 @@
+class Demo{    
+    final static public void main(String[] ab){ 
+        int g = 5;
+        int b, c = g++;
+        //--
+        for(int r = -2 ; r < 4; r++) {
+            System.out.println(r++);
+            System.out.println(b = g++);
+            if(r == 0) {
+                continue;
+            }
+            System.out.println(g);
+            System.out.println(b);
+        }
+        System.out.println("einde");
+    }
+}
+============================
+
+class Demo{    
+    final static public void main(String[] ab){ 
+        int s = 14;
+        s += 2;
+        int y = --s;
+        boolean waar = false;
+        do {
+            waar = !waar;
+            System.out.println(y);
+            System.out.println(s--);
+            System.out.println(--s);
+            System.out.println("rondje");
+        }while(waar);
+        System.out.println("einde");
+    }
+}
+
+===================================
+
+class Demo{    
+    final static public void main(String[] ab){ 
+        int i = 24;
+        int j = i -= 12;
+        if (i == 13)
+            j++;
+            j++;
+        for(int t = 6; t > 5; t--) {
+            System.out.println(i);
+            System.out.println(j);
+            if(t++ > 12)
+                System.out.println("hoi");
+                break;
+        }
+        System.out.println("einde");
+    }
+}
+=========================
+
+
+class Demo{    
+    final static public void main(String[] ab){ 
+        int a = 11;
+        int b = ++a;        
+        for(int s = heen(); terug(a); ) {
+            System.out.println(a--);
+            switch(a) {
+            case 9:
+                System.out.println("Q"+a--);
+            case 7:
+                System.out.println("A"+a++);
+                break;
+            case 5:
+                System.out.println("B"+a--);
+            default:
+                System.out.println("C"+a--);
+            }
+        }
+        System.out.println("ready");
+    }
+    static int heen() {
+        System.out.println("heen");
+        return 4;
+    }
+    static boolean terug(int q) {
+        System.out.println("terug"+q);
+        return q > 4;
+    }
+}

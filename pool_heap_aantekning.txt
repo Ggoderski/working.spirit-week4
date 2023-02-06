@@ -1,0 +1,33 @@
+class Demo {
+    public static void main(String... args) {
+        OlieTanker ol1 = new OlieTanker();
+        OlieTanker ol2 = ol1;
+        System.out.println(ol1);
+        System.out.println(ol2);
+        System.out.println(ol1 == ol2);
+        System.out.println("==========");
+        // primitives   ref variables
+        //  String     Wrappers < 128   -128 127
+        // pool  KEUZE
+        
+        String woord1 = new String("dinsdag");
+        String woord2 = new String("dinsdag");
+        System.out.println(woord1 == woord2);
+        String woord5 = "dinsdag";
+        String woord3 = "woensdag";
+        String woord4 = "woensdag"; // staat woensdag al in de pool
+        System.out.println(woord3 == woord4);
+        
+        Integer getal1 = new Integer(125);
+        Integer getal2 = new Integer(125);
+        System.out.println(getal1);
+        System.out.println(getal1 == getal2);
+        Integer getal3 = 125;
+        Integer getal4 = 125;
+        System.out.println(getal3 == getal4);
+        Integer getal5 = -129;
+        Integer getal6 = -129;
+        System.out.println(getal5 == getal6);
+    }
+}
+class OlieTanker{}

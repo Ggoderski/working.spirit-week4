@@ -1,0 +1,37 @@
+
+
+
+// instantieren   /// aanmaken   // een nieuw object aanmaken   // new
+// implementeren  /// functionaliteit geven // een functie vullen met statements // {} body
+class Demo {
+    public static void main(String... args) {
+        Berg b = new ErgKleineBerg();//new Berg();
+        b.beklimmen();
+        //new Berg();
+        Berg[] bergen;
+    }
+}
+//class abstract   1 regel  1 effect -  niet instantieren
+// methode abstract 3 regels  3 effecten - 1 geen body/implementatie 2 class abstract 3 implementatie verplichting in eerste concreet kind
+class Beklimmer{
+    Berg verkennen(Berg b) {
+        return null;
+    }
+}
+
+abstract class Berg{
+    abstract void beklimmen();
+}
+class GroteBerg extends Berg{
+    void beklimmen() {
+        System.out.println("in grote berge");
+    }
+}
+class ErgGroteBerg extends GroteBerg{}
+abstract class KleineBerg extends Berg{
+}
+class ErgKleineBerg extends KleineBerg{
+    void beklimmen() {
+        System.out.println("in erg kleine berg");
+    }
+}

@@ -1,0 +1,41 @@
+class Demo {
+    public static void main(String... args) {
+        Grasmat matje = new Grasmat();
+        matje.maaien();
+    }
+}
+class TuinOnderdeel{
+    int prijs = 45;
+    TuinOnderdeel(){}
+    TuinOnderdeel(int a){}
+    void maaien() {
+        System.out.println("maaien in tuinonderdeel");
+    }
+    void inkopen() {
+        System.out.println("kopen in tuinonderdeel");
+    }
+}
+
+class Grasmat extends TuinOnderdeel{
+    int prijs = 25;
+    Grasmat(){
+        super(5);
+    }
+    Grasmat(int a){}
+    void maaien() {
+        int prijs = 35;
+        super.maaien();
+        this.inkopen();
+        System.out.println("maaien in grasmag" + prijs);
+        System.out.println("maaien in grasmag" + this.prijs);
+        System.out.println("maaien in grasmag" + super.prijs);
+        this.groeien();
+        this.groeien();
+    }
+    void groeien() {
+        System.out.println("groeien in grasmat");
+    }
+    
+}
+
+

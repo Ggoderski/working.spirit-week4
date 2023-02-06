@@ -1,0 +1,28 @@
+class StartMenu, 
+	// kitchenBuilder.printChosenCabinets();
+
+
+class KitchenBuilder,
+	/*  
+       public void printChosenCabinets() {
+     
+        int totalLength = 0;
+        int totalPrice = 0;
+
+        System.out.println("");
+        System.out.println("Thank you for shopping at KingGiddie's Kitchen Builder:");
+        System.out.println("Bon");
+        System.out.println("===========================");
+
+        for (Kasten kasten : gekozenKasten) {
+            System.out.println(kasten.getName() + " " + kasten.getWidth() + "cm, €" + kasten.getPrice());
+            totalLength += kasten.getWidth();
+            totalPrice += kasten.getPrice();
+        }
+        System.out.println("===========================");
+        System.out.println("Total length: " + totalLength + "cm");
+        System.out.println("Total price: €" + totalPrice);
+    
+        System.exit(0);
+    }
+    */ 
